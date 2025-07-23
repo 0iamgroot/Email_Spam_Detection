@@ -1,44 +1,96 @@
-<!-- PROJECT TITLE -->
-<h1 align="center">Email Spam Detection</h1>
-
-<!-- HEADER -->
+<!-- TITLE IMAGE -->
 <p align="center">
-  <img src="Images/Email_Spam_Detection_Cover.png"/>
+  <img src="Images/Email_Spam_Detection_Cover.png" alt="Email Spam Detection Cover" width="800"/>
 </p>
 
-<!-- PROJECT DESCRIPTION -->
-## <br>**➲ Project description**
-Email spam detection system is used to detect email spam using Machine Learning technique called Natural Language Processing and Python, where we have a dataset contain a lot of emails by extract important words and then use naive classifier we can detect if this email is spam or not.
+<!-- PROJECT TITLE -->
+<h1 align="center">📧 Email Spam Detection using NLP & Machine Learning</h1>
 
-<!-- THE DATASET -->
-## <br>**➲ The Dataset**
-Human activites dataset contain about 5728 record which is a sample of an email
-and a target column "spam" which describe the state of an email spam or not.<br>
+---
 
-<!-- CODING SECTIONS -->
-## <br>**➲ Coding Sections**
-In this part we will see the project code divided to sections as follows:
-<br>
+## 🚀 Project Overview
 
-- Section 1 | The Data :<br>
-In this section we aim to do some operations on the dataset before training the model on it,
-processes like :
-  1. Data Loading : Load the dataset
-  2. Data Visualization : Visualize dataset features
-  3. Data Cleaning : Remove stopwords and duplicates values
-  4. Data Splitting : Split the dataset into training and testing sets<br><br>
+This project aims to build an **Email Spam Detection** system using **Natural Language Processing (NLP)** and **Machine Learning**. The system analyzes the content of emails and predicts whether a message is **spam** or **not spam (ham)** based on patterns learned from historical data.
 
-- Section 2 | The Model :<br>
-The dataset is ready for training, so we create a naive classifier using scikit-learn and thin fit it to the data, and finally we evaluate the model by getting accuracy, classification report and confusion matrix<br>
+Key technologies used:
+- Python
+- Scikit-learn
+- NLP (tokenization, stopword removal, etc.)
+- Naive Bayes Classification
 
-<!-- REFERENCES -->
-## <br>**➲ References**
-These links may help you to better understanding of the project idea and techniques used :
-1. Spam detection in machine learning : https://bit.ly/3nwiKtA
-2. Naive-bayes algorithm : https://bit.ly/3zc9SLH
-3. Model evaluation : https://bit.ly/3B12VOO
+---
 
-<!-- CONTACT -->
-## <br>**➲ Contact**
-- E-mail   : ayush030520@gmail.com
-- LinkedIn : https://www.linkedin.com/in/ayush-kumarrr/
+## 📂 Dataset Information
+
+- **Source**: Public dataset containing email text labeled as spam or not.
+- **Total Records**: ~5,728 emails
+- **Label Column**: `spam`  
+  - `1` → Spam  
+  - `0` → Not Spam (Ham)
+
+Each record contains an email message and its corresponding classification label.
+
+---
+
+## 🧠 Project Workflow
+
+### 🔹 Section 1: Data Preparation
+
+1. **Loading the Data** – Read the dataset into a DataFrame  
+2. **Data Visualization** – Explore class distributions and word frequencies  
+3. **Data Cleaning** – 
+   - Remove duplicates  
+   - Lowercase conversion  
+   - Remove stopwords and punctuation  
+4. **Text Vectorization** – Convert text into numerical format using TF-IDF  
+5. **Train-Test Split** – Split dataset into 80% training and 20% testing
+
+### 🔹 Section 2: Model Building & Evaluation
+
+- Use **Multinomial Naive Bayes Classifier** from `scikit-learn`
+- Train the model on preprocessed training data
+- Evaluate using:
+  - ✅ Accuracy Score
+  - 📊 Classification Report
+  - 🔍 Confusion Matrix
+
+---
+
+## 📈 Results
+
+- **Accuracy Achieved**: *[Insert Accuracy]%*
+- **Precision, Recall, F1-score**: *Detailed in the classification report*
+- Confusion matrix shows clear distinction between spam and ham classification.
+
+*(You can include a result screenshot or image here if available)*
+
+---
+
+## 🔗 References & Resources
+
+1. [Spam Detection with Machine Learning](https://bit.ly/3nwiKtA)
+2. [Understanding Naive Bayes Algorithm](https://bit.ly/3zc9SLH)
+3. [Evaluating Machine Learning Models](https://bit.ly/3B12VOO)
+
+---
+
+## 📬 Contact
+
+For any queries or collaborations, feel free to connect:
+
+- 📧 **Email**: [ayush030520@gmail.com](mailto:ayush030520@gmail.com)  
+- 💼 **LinkedIn**: [Ayush Kumar](https://www.linkedin.com/in/ayush-kumarrr/)
+
+---
+
+## 📌 Future Improvements
+
+- Integrate deep learning models (e.g., LSTM)
+- Deploy as a web application using Flask or Streamlit
+- Improve preprocessing using advanced NLP techniques like Lemmatization
+
+---
+
+> *"Filtering spam might seem small, but it's the first wall of defense against cyber threats. Smart filters = safer inbox."*
+
+---
